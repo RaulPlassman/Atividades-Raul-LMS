@@ -1,0 +1,44 @@
+body {
+    background-image: url("./g.png");
+    background-position: top;
+    background-repeat: repeat-x;
+}
+
+h1{
+    text-align: center;
+    color: tomato;
+
+}
+
+.Fotoperformance {
+    text-align: center;
+    
+}
+
+article section header {
+    font-family: Cambria, Cochin, Georgia,
+     Times, 'Times New Roman', serif;
+
+}
+
+article {
+    border-style: dotted solid groove ridge;
+    border-bottom-color: teal;
+    border-top-color: burlywood;
+    border-right-color: brown;
+    margin-top: 12px;
+    margin-bottom: 3cm;
+    margin-right: 1ch;
+    margin-left: 1em;
+    padding: 20px 30px 20px 30px;
+
+}
+
+p {
+    text-align: center;
+    color: darkolivegreen;
+    font-size: 13px;
+    font-family: 'Segoe UI', 
+    Tahoma, Geneva, Verdana, sans-serif;
+}
+
