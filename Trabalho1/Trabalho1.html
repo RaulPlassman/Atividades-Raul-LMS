@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0;
+        }
+        .navegador-superior {
+            background-color: burlywood;
+            overflow: hidden;
+            box-shadow: 1px 2px 4px rgba(1, 1, 1,.5);
+              
+        }
+        .navegador-superior ul {
+            list-style-type: none;
+            
+        }
+        .navegador-superior ul li a{
+            padding: 2px;
+            margin: 2px;
+            display: block;
+            overflow: hidden;
+            text-decoration: none;
+            color:darkgreen;
+        }
+        .navegador-superior ul li div ul li a:hover, .dropdown .silva:hover{
+            background-color: rgb(223, 204, 33);
+            cursor:pointer;
+        } 
+        .dropdown {
+            float: left;
+          
+
+        }
+        .dropdown .dropdown-button {
+            padding: 5px;            
+        }
+        .dropdown .Links{
+            position: absolute;
+            background-color:  rgb(30, 210, 186);
+            overflow: hidden;
+            max-height: 0px;
+
+        }
+        .dropdown:hover .Links {
+            transition-duration: 2s;
+            max-height: 400px;
+            transform: translateY(0em);
+            
+        }
+        .dropdown:hover .dropdown-button{
+            background-color: rgb(255, 0, 149);
+            color: white;
+             
+        }
+
+        .container {
+            height: 100px;
+            background: rgb(128, 98, 98);
+            margin-top: 5px;
+            box-shadow: 1px 2px 4px rgba(1, 1, 1,.5);
+        }
+        .navegador-esquerdo {
+            background: rgb(0, 119, 128);
+            box-shadow: 1px 2px 4px rgba(1, 1, 1,.5);
+
+        }
+        .menu li a {
+            text-decoration: none;
+            color: black;
+            display: block;
+            text-align: left;
+            padding: 10px;
+
+        }
+        .menu li a:hover {
+            background: whitesmoke;
+        }
+
+        .navegador-esquerdo {
+            float: left;
+            width: 200px;
+            height: 600px;
+        }
+
+        .barra-direita {
+            float: right;
+            margin: 0;
+            padding: 10px;
+            width: 200px;
+            height: 600px;
+            background-color:rgb(74, 160, 66);
+            box-shadow: 1px 2px 4px rgba(1, 1, 1,.5);
+            background:linear-gradient(rgb(100, 40, 20),rgb(0,100,50));           
+
+        }
+        .barra-direita p {
+            list-style-type: none;
+            font-style: italic;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size-adjust: inherit;
+            text-align: justify;
+            color: antiquewhite
+            
+    
+           
+
+        }
+        .Imagem {
+            animation:  GG 4s  infinite ;
+            align-items: center;
+    
+        }
+        .Gloria {
+            height: 200px;
+            width: 200px;
+            transform: translate(0px, 0px) rotate(0deg)
+
+        }
+
+        @keyframes GG {
+           0%{
+                transform: translate(0px, 0px) rotate(0deg);
+            }
+            25%{
+                transform: translate(0px, 300px) rotate(0deg) ;
+            }
+            80%{
+                transform: translate(300px, 300px) rotate(0deg) ;
+            }
+            100%{
+        
+                transform: translate(0px, 0px) rotate(0deg);
+        }
+            to{
+                transform:rotate(180deg);
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navegador-superior">
+            <ul>
+                <li>
+                    <div class="dropdown">
+                        <div class="dropdown-button">
+                            Silva
+                        </div>
+                        <div class="Links">
+                            <ul class="Estilizar">
+                                <li> <a href="https://www.youtube.com/watch?v=KnJwCg-zh4w"> A cor é Rosa </a></li> <br>
+                                <li> <a href="https://www.youtube.com/watch?v=ZAW3osd54x0"> Palavras no Corpo </a></li> <br>
+                                <li> <a href="https://www.youtube.com/watch?v=KnJwCg-zh4w"> Feliz e Ponto </a></li>
+                            </ul>
+                        </div>
+                
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                         <div class="dropdown-button">
+                            Jaloo
+                         </div>
+                             <div class="Links">
+                                 <ul class="Estilizar">
+                                    <li> <a href="https://www.youtube.com/watch?v=78wVROmr0HE"> Céu Azul </a></li> 
+                                    <li> <a href="https://www.youtube.com/watch?v=DkAh-OmITu40"> Say Goodbye </a></li>
+                                    <li> <a href="https://www.youtube.com/watch?v=pg-CYzhiyQU"> Insight </a></li>
+                                 </ul>
+                             </div>
+                        
+                         </div>
+
+                </li>
+                <li>
+                        <div class="dropdown">
+                                <div class="dropdown-button">
+                                    Glória Groove
+                                </div>
+                                <div class="Links">
+                                    <ul class="Estilizar">
+                                            <li> <a href="https://www.youtube.com/watch?v=LWaOGMntBlY"> Bumbum de Ouro </a></li> 
+                                            <li> <a href="https://www.youtube.com/watch?v=eYU-oXjIlus"> Império </a></li> <br>
+                                            <li> <a href="https://www.youtube.com/watch?v=g6cPKfDzFkQ"> Arrasta </a></li> 
+                                       
+                                       
+                                    </ul>
+                                </div>
+                        
+                            </div>
+
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div class = "container">
+        <nav class = "navegador-esquerdo">
+            <ul class = "menu">
+                <li> <a href="https://www.youtube.com/channel/UCnu2LU1uXQ-oh--vkA6_exg"> Canal Oficial Silva</a></li>
+                <li> <a href="https://www.youtube.com/channel/UCSnVLlL_pFn1MJ3LvZxWhjg"> Canal Oficial Jaloo </a></li>
+                <li> <a href="https://www.youtube.com/channel/UCLoL96fSeaLOen3mpDYeqtA"> Canal Oficial Glória Groove </a></li>
+
+            </ul>
+
+        </nav>
+        <div class=" barra-direita">
+                <p>
+                    Chegou a vez de Gloria Groove brilhar! 
+                    A cantora, rapper e drag queen brasileira estreou na noite da última segunda-feira (05) 
+                    o clipe do seu novo single, “Bumbum de Ouro”, e estamos seguros em dizer que esse é um dos
+                    seus melhores trabalhos visuais - e olha que ela tem uma das melhores videografias nessa 
+                    leva de drags cantoras! Todo trabalhado em tons dourados, o clipe vem carregado de coreografia
+                     e com a cantora sensualizando bastante, mas guarda uma surpresa para seus momentos finais, quando
+                    ela contracena  Daniel, que é a sua versão desmontada, nos lembrando bastante da Ciara e o seu 
+                    icônico “Like a Boy”. Porque um bom ícone, sempre tem boas referências, né?          
+                <p>
+            
+
+        </div>
+    </div>
+    <div class="Imagem">
+    <img class = "Gloria" src="./GG.png" alt=" ">
+    
+
+    </div>
+    
+      
+   
+</body>
+</html>
